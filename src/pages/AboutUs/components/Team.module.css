@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 24px;
+}
+
+.title {
+    color: #7EB693;
+    font-family: Yellowtail;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.subHeading {
+    color: #274C5B;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin: 0;
+}
+
+.text {
+    color: #525C60;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    max-width: 700px;
+}
+
+.teamMember {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 40px;
+}

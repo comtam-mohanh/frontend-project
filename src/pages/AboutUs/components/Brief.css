@@ -1,0 +1,81 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 120px;
+    gap: 20px;
+
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.title {
+    color: #7EB693;
+    font-family: Yellowtail;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.motto {
+    color: #274C5B;
+    font-family: Roboto;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin: 0;
+}
+
+.text {
+    color: #525C60;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.iconText {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #274C5B;
+    gap: 48px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.tractor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.chemPlant {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.food {
+    display: flex;
+    flex: 1;
+}
