@@ -12,7 +12,8 @@
 .bgImg {
     position: relative;
     width: 100%;
-    max-height: 467px;
+    max-height: 400px;
+    object-fit: cover;
 }
 
 .text {

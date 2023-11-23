@@ -4,6 +4,7 @@ import './index.css';
 
 import reportWebVitals from './reportWebVitals';
 import { About } from './pages/AboutUs/AboutUs';
+import { Shop } from './pages/Shop/Shop';
 
 
 const root = ReactDOM.createRoot(
@@ -11,7 +12,8 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <About />
+    {/* <About /> */}
+    <Shop />
   </React.StrictMode>
 );
 
