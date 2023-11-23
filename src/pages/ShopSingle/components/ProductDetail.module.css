@@ -1,0 +1,79 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 300px;
+    gap: 80px;
+}
+
+.img {
+    display: flex;
+    flex: 1;
+    width: 400px;
+    position: relative;
+}
+
+.category {
+    border-radius: 8px;
+    background: #274C5B;
+    padding: 4px 8px;
+    color: #FFF;
+    text-align: center;
+    font-family: Open Sans;
+    position: absolute;
+    z-index: 1;
+    margin: 20px;
+}
+
+.title {
+    color: #274C5B;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.price {
+    color: #274C5B;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 20px;
+}
+
+.text {
+    color: #525C60;
+    font-family: Open Sans;
+    font-size: 16px;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+.quantity {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+}
+
+.inputNumber {
+    text-align: center;
+    border-radius: 16px;
+    border: 2px solid #274C5B;
+    background: #FFF;
+    padding: 20px;
+    width: 60px;
+    color: #274C5B;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
