@@ -1,0 +1,82 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    padding: 80px;
+    align-items: center;
+}
+
+.BgImg {
+    display: flex;
+    flex: 1;
+    position: relative;
+    max-width: 50%;
+    max-height: 700px;
+    position: relative;
+}
+
+.empty {
+    display: flex;
+    flex: 1;
+    position: relative;
+    background-color: white;
+    position: relative;
+}
+
+.content {
+    background-color: white;
+    position: absolute;
+    padding: 60px;
+    width: 400px;
+    border-radius: 20px;
+    margin-left: 40%;
+}
+
+.heading {
+    color: #7EB693;
+    font-family: Yellowtail;
+    font-size: 24px;
+    font-style: italic;
+    margin: 0;
+}
+
+.subHead {
+    color: #274C5B;
+    font-family: Roboto;
+    font-size: 40px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.bold {
+    color: #274C5B;
+    font-family: Roboto;
+    font-size: 20px;
+}
+
+.text {
+    color: #525C60;
+    font-family: Open Sans;
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .content {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        margin: 0;
+        position: relative;
+    }
+
+    .empty {
+        display: none;
+    }
+}
