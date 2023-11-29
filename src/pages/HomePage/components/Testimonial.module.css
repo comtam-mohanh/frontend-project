@@ -1,0 +1,68 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+
+    background-image: url(../../../assets/testi-bg.png);
+    background-size: cover;
+    background-attachment: local;
+    background-position: center;
+}
+
+.heading {
+    color: #7EB693;
+    font-family: Yellowtail;
+    font-size: 24px;
+    font-style: italic;
+    margin: 0;
+}
+
+.subHead {
+    color: #274C5B;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 40px;
+    margin: 0;
+}
+
+.reviewer {
+    border-radius: 50%;
+    width: 100px;
+    margin-top: 40px;
+}
+
+.text {
+    color: #525C60;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 16px;
+    margin: 10px;
+    background-color: white;
+    max-width: 600px;
+}
+
+.name {
+    color: #274C5B;
+    font-family: Roboto;
+    font-size: 20px;
+    margin: 0;
+    margin-top: 20px;
+    background-color: white;
+}
+
+.divider {
+    background-color: #E0E0E0;
+    height: 1px;
+    width: 70%;
+    margin: 80px;
+}
+
+.chart {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}

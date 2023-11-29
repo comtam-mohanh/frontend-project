@@ -1,0 +1,81 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 120px;
+
+    background-image: url("../../../assets/home-bg.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.heading {
+    color: #68A47F;
+    font-family: Yellowtail;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: bold;
+    margin: 0;
+}
+
+.subHead {
+    color: #274C5B;
+    font-family: Roboto;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: bold;
+    width: 400px;
+    margin: 0;
+}
+
+.sale {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    text-align: left;
+    margin: 80px;
+}
+
+.sale1 {
+    background-image: url("../../../assets/sale-bg1.jpg");
+    background-size: cover;
+    color: white;
+    padding: 50px 200px 50px 40px;
+    border-radius: 16px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+.sale2 {
+    background-image: url("../../../assets/sale-bg2.jpg");
+    background-size: cover;
+    color: #274C5B;
+    padding: 50px 200px 50px 40px;
+    border-radius: 16px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.firstText {
+    font-family: Yellowtail;
+    font-size: 20px;
+    font-style: italic;
+    margin: 0;
+}
+
+.secondText {
+    font-family: Roboto;
+    font-size: 32px;
+    font-weight: bold;
+    width: 200px;
+}

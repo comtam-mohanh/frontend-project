@@ -1,0 +1,39 @@
+.container {
+    background-color: #274C5B;
+    display: flex;
+    flex-direction: column;
+    padding: 80px;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 200px;
+}
+
+.heading {
+    color: #7EB693;
+    font-family: Yellowtail;
+    font-size: 24px;
+    font-style: italic;
+    margin: 0;
+}
+
+.subHead {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 40px;
+    margin: 0;
+}
+
+.products {
+    padding: 40px 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
