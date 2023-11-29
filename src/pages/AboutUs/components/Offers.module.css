@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #274C5B;
+    padding: 100px;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.title {
+    color: #7EB693;
+    font-family: Yellowtail;
+    font-size: 24px;
+    margin: 0;
+}
+
+.subHead {
+    font-size: 32px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.categories {
+    display: flex;
+    flex: row;
+    gap: 12px;
+    margin: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.category {
+    width: 250px;
+    height: 250px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 1000px) {
+    .categories {
+        flex-wrap: wrap;
+    }
+}

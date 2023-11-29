@@ -1,0 +1,19 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.copyright {
+    margin-top: 40px;
+    background-color: #D4D4D4;
+    width: 100%;
+    text-align: center;
+    color: #525C60;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+}

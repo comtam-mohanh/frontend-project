@@ -1,0 +1,41 @@
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px;
+    background-image: url(../../../assets/Subcribe.png);
+    background-attachment: fixed;
+    background-size: cover;
+    border-radius: 24px;
+}
+
+.subText {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    max-width: 30%;
+
+}
+
+.inputEmail {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.email {
+    border-radius: 16px;
+    background: #FFF;
+    color: #ABABAB;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    width: 200px;
+    padding: 20px;
+}
