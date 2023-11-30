@@ -4,12 +4,18 @@ import Broc from "../../../assets/broc.png"
 import Banana from "../../../assets/banana.png"
 import Almond from "../../../assets/Almond.png"
 import Bread from "../../../assets/Bread.png"
+import { useNavigate } from "react-router-dom"
+import { Routes } from "../../../routes"
 
 export function RelatedProduct() {
+    const navigate = useNavigate()
+
     return (
         <div className={styles.container}>
             <h3 className={styles.title}>Related Products</h3>
-            <div className={styles.products}>
+            <a className={styles.products} onClick={() => {
+                navigate(Routes.SHOP_SINGLE)
+            }}>
                 <ProductCart
                     category="Vegetable"
                     productImg={Broc}
@@ -30,7 +36,7 @@ export function RelatedProduct() {
                     productImg={Bread}
                     name="Zelco Suji Elaichi Rusk"
                     price="$20.00" />
-            </div>
+            </a>
         </div>
     )
 }

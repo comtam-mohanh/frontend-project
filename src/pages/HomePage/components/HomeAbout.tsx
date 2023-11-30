@@ -3,8 +3,12 @@ import BgImg from "../../../assets/orange-bg.png"
 import Vegan from "../../../assets/Vegan Food.jpg"
 import Mail from "../../../assets/Mailbox Quality.jpg"
 import { Button } from "../../../components/Button/Button"
+import { useNavigate } from "react-router-dom"
+import { Routes } from "../../../routes"
 
 export function HomeAbout() {
+    const navigate = useNavigate();
+
     return (
         <div className={styles.container}>
             <img className={styles.bgImg} src={BgImg} />
@@ -40,7 +44,9 @@ export function HomeAbout() {
                         </div>
                     </div>
                 </div>
-                <Button variant="primary">
+                <Button variant="primary" onClick={() => {
+                    navigate(Routes.SHOP)
+                }}>
                     Shop Now
                 </Button>
             </div>

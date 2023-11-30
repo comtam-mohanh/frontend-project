@@ -5,8 +5,13 @@ import { ProductDetail } from "./components/ProductDetail";
 import { RelatedProduct } from "./components/RelatedProduct";
 import styles from "./ShopSingle.module.css"
 import Background from "../../assets/single-bg.png"
+import { useEffect } from 'react';
 
 export function ShopSingle() {
+    useEffect(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    }, []);
+
     return (
         <Layout>
             <div className={styles.container}>

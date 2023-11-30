@@ -8,12 +8,17 @@ import { WhyChooseUs } from "./components/WhyChoose";
 import "./AboutUs.css"
 import { Team } from "./components/Team";
 import { Offers } from "./components/Offers";
+import { useNavigate, createBrowserRouter } from "react-router-dom";
+import { useEffect } from 'react';
+import { useScrollToTop } from "../../hooks/use-scroll-to-top";
 
 type AboutProps = {
     text?: string
 }
 export function About({ }: AboutProps) {
+    useScrollToTop();
 
+    const navigate = useNavigate();
     const [isLoading, setIsLoading] = React.useState(false);
 
     return (

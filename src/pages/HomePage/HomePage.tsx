@@ -7,8 +7,13 @@ import { ProductOffer } from "./components/ProductOffer";
 import { Eco } from "./components/Eco";
 import { PicOption } from "./components/PicOption";
 import { News } from "./components/News";
+import { useEffect } from 'react';
 
 export function Home() {
+    useEffect(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    }, []);
+
     return (
         <Layout>
             <div className="home">

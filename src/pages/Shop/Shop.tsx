@@ -15,13 +15,23 @@ import Hazelnut from "../../assets/Hazelnut.png"
 import Bean from "../../assets/Mung Bean.png"
 import Pistachio from "../../assets/Pistachio.png"
 import Zuc from "../../assets/Zucchini.png"
-
+import { useEffect } from 'react';
+import { useNavigate } from "react-router-dom"
+import { Routes } from "../../routes"
 
 export function Shop() {
+    useEffect(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    }, []);
+
+    const navigate = useNavigate()
+
     return (
         <Layout>
             <PageHeader text="Shop" bgImage={bgImg} />
-            <div className={styles.products}>
+            <a className={styles.products} onClick={() => {
+                navigate(Routes.SHOP_SINGLE)
+            }}>
                 <ProductCart
                     category="Vegetable"
                     productImg={Broc}
@@ -82,9 +92,7 @@ export function Shop() {
                     productImg={Zuc}
                     name="Vietnamese Zucchini"
                     price="$17.00" />
-
-
-            </div>
+            </a>
         </Layout>
     )
 }

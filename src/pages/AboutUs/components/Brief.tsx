@@ -3,10 +3,14 @@ import "./Brief.css"
 import Tractor from "../../../assets/Tractor.jpg"
 import ChemPlant from "../../../assets/Chemical Plant.jpg"
 import { Button } from "../../../components/Button/Button"
+import { useNavigate } from "react-router-dom"
+import { Routes } from "../../../routes"
 
 
 
 export function Brief() {
+    const navigate = useNavigate()
+
     return (
         <div className="container">
             <img className="food" src={Food} />
@@ -24,7 +28,9 @@ export function Brief() {
                         <b className="icon">No growth hormones are used</b>
                     </div>
                 </div>
-                <Button variant="primary">
+                <Button variant="primary" onClick={() => {
+                    navigate(Routes.ABOUT_US);
+                }}>
                     Explore More
                 </Button>
             </div>

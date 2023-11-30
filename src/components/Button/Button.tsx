@@ -2,10 +2,6 @@ import React, { ButtonHTMLAttributes } from "react"
 import styles from "./Button.module.css"
 import arrow from "../../assets/Aerrow.svg"
 
-// interface ButtonProps extends React.PropsWithChildren, ButtonHTMLAttributes<any> {
-//     variant: "primary" | "secondary" | "teriary"
-// }
-
 type ButtonProps = {
     variant: "primary" | "secondary" | "teriary"
 } & React.ComponentProps<"button">

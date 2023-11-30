@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    position: relative;
+    object-fit: contain;
+    max-width: 100%;
+}
+
+.content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    justify-content: center;
+    transform: translate(50%, 0);
+    align-items: center;
+}
+
+.number {
+    color: #8FA8A8;
+    margin: 0;
+    font-size: 200px;
+}
+
+.heading {
+    color: #335B6B;
+    font-size: 32px;
+    margin: 0;
+}
+
+.text {
+    color: #525C60;
+    font-size: 16px;
+}

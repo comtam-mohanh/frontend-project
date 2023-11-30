@@ -1,7 +1,11 @@
 import { Button } from "../../../components/Button/Button";
+import { Routes } from "../../../routes";
 import styles from "./Top.module.css"
+import { useNavigate } from "react-router-dom";
 
 export function Top() {
+    const navigate = useNavigate();
+
     return (
         <div>
             <div className={styles.container}>
@@ -11,7 +15,9 @@ export function Top() {
                 <h2 className={styles.subHead}>
                     Choose the best healthier way of life
                 </h2>
-                <Button variant="secondary">
+                <Button variant="secondary" onClick={() => {
+                    navigate(Routes.ABOUT_US);
+                }}>
                     Explore Now
                 </Button>
             </div>

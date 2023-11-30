@@ -3,8 +3,12 @@ import styles from "./News.module.css"
 import Lettuce from "../../../assets/lettuce.png"
 import Tomato from "../../../assets/tomato.png"
 import Vector from "../../../assets/Vector.svg"
+import { useNavigate } from "react-router-dom"
+import { Routes } from "../../../routes";
 
 export function News() {
+    const navigate = useNavigate()
+
     return (
         <div className={styles.container}>
             <div className={styles.top}>
@@ -14,7 +18,7 @@ export function News() {
                         Discover weekly content about organic food, & more
                     </h3>
                 </div>
-                <Button variant="teriary">
+                <Button variant="teriary" onClick={() => { navigate(Routes.ERROR) }}>
                     More News
                 </Button>
             </div>
@@ -33,7 +37,7 @@ export function News() {
                         </div>
                         <b className={styles.text}>The Benefits of Vitamin D & How to Get It</b>
                         <p className={styles.text}>Simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
-                        <Button variant="secondary">
+                        <Button variant="secondary" onClick={() => { navigate(Routes.ERROR) }}>
                             Read More
                         </Button>
                     </div>
@@ -51,7 +55,7 @@ export function News() {
                         </div>
                         <b className={styles.text}>Our Favourite Summertime Tommeto</b>
                         <p className={styles.text}>Simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
-                        <Button variant="secondary">
+                        <Button variant="secondary" onClick={() => { navigate(Routes.ERROR) }}>
                             Read More
                         </Button>
                     </div>

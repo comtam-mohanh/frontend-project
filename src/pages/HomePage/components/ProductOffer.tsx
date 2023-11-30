@@ -5,8 +5,12 @@ import Corn from "../../../assets/Corn.png"
 import Eggs from "../../../assets/Eggs.png"
 import { ProductCart } from "../../Shop/components/ProductCard"
 import { Button } from "../../../components/Button/Button"
+import { useNavigate } from "react-router-dom"
+import { Routes } from "../../../routes"
 
 export function ProductOffer() {
+    const navigate = useNavigate()
+
     return (
         <div className={styles.container}>
             <div className={styles.top}>
@@ -16,11 +20,15 @@ export function ProductOffer() {
                         We Offer Organic For You
                     </h3>
                 </div>
-                <Button variant="secondary">
+                <Button variant="secondary" onClick={() => {
+                    navigate(Routes.SHOP)
+                }}>
                     View All Product
                 </Button>
             </div>
-            <div className={styles.products}>
+            <a className={styles.products} onClick={() => {
+                navigate(Routes.SHOP_SINGLE)
+            }}>
                 <ProductCart
                     category="Nuts"
                     productImg={Cashew}
@@ -41,7 +49,7 @@ export function ProductOffer() {
                     productImg={Eggs}
                     name="Free Range Eggs"
                     price="$12.00" />
-            </div>
+            </a>
         </div>
     )
 }

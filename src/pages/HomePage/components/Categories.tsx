@@ -9,13 +9,19 @@ import Bean from "../../../assets/Mung Bean.png"
 import Pistachio from "../../../assets/Pistachio.png"
 import Zuc from "../../../assets/Zucchini.png"
 import { Button } from "../../../components/Button/Button"
+import { useNavigate } from "react-router-dom"
+import { Routes } from "../../../routes"
 
 export function Categories() {
+    const navigate = useNavigate()
+
     return (
         <div className={styles.container}>
             <h4 className={styles.heading}>Categories</h4>
             <h3 className={styles.title}>Our Products</h3>
-            <div className={styles.products}>
+            <a className={styles.products} onClick={() => {
+                navigate(Routes.SHOP_SINGLE)
+            }}>
                 <ProductCart
                     category="Vegetable"
                     productImg={Broc}
@@ -56,8 +62,10 @@ export function Categories() {
                     productImg={Zuc}
                     name="Vietnamese Zucchini"
                     price="$17.00" />
-            </div>
-            <Button variant="primary">
+            </a>
+            <Button variant="primary" onClick={() => {
+                navigate(Routes.SHOP)
+            }}>
                 Load More
             </Button>
         </div>
